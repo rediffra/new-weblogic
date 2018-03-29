@@ -11,12 +11,10 @@
 
  node 'node2.example.com'{
 		
-#		notify { 'This is Houston Calling in Tango!!! Respond Pls!!': }
 class {'nfsshare':}
 
-#	package {'tomcat':
-#		ensure => present,
-#	}
+hiera_include('classes')
+
  }
 ## Active Configurations ##
 

@@ -1,2 +1,14 @@
 ---
 name: vijay
+
+classes:
+  - fmw_jdk::rng_service
+  - fmw_jdk::install
+
+java_home_dir:          &java_home_dir          '/usr/java/jdk1.8.0_161'
+
+
+fmw_jdk::install::java_home_dir:        *java_home_dir
+fmw_jdk::install::source_file:          '/software/jdk-8u161-linux-x64.tar.gz'
+
+
